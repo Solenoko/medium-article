@@ -1,68 +1,92 @@
-* {
+/* Fonts and colors */
+body {
+  color: #00ffcc;
+  font-size: 18px;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: monospace;
+  background: linear-gradient(to right, lch(50% 100 200), lch(50% 100 0));
 }
-
-.banner {
-  background-image: url('https://loremflickr.com/1200/400/gaming');
-  color: #00ffcc;
+h1, h2 {
+  font-family: monospace;
+  font-weight: bold;
   text-align: center;
-  padding: 50px;
-  font-family: monospace;
-}
-
-.banner h1 {
-  font-size: 3em;
-}
-.banner p {
-  font-size: 1.5em;
   color: #ff66cc;
 }
-
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #222;
-  color: #e0e0e0;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid #00ffcc;
-  border-radius: 8px;
+h2 {
+  color: #ff66cc;;
+  font-weight: normal;
+  font-size: 32px;
 }
-
-.container h2 {
-  color: #ff66cc;
-  font-family: monospace;
-  margin-top: 20px;
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 700px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 500px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 100%;
-    padding: 10px;
-  }
-}
-
 a {
   text-decoration: none;
-  background-image: linear-gradient(to bottom, transparent 50%, #00ffcc 50%);
-  background-size: 100% 200%;
-  background-position: 0 0;
-  transition: background-position 0.3s, color 0.3s;
+  color: #4352A1;
 }
 
-a:hover {
-  background-position: 0 100%;
-  color: #00ffcc;
+p {
+    font-size: 22px;
+    background: rgba(253, 253, 253, 0.1);
+}
+
+/* Custom design */
+.banner {
+  background-image: url("retrogame.jpg");
+  background-size: 100% auto;
+  padding: 120px 0;
+}
+.banner h1 {
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner p {
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  background: rgba(0, 0, 0, 0.5)
+
+}
+.container {
+  width: 700px;
+  margin: 50px auto;
+}
+.link-medium {
+  background-image: linear-gradient(to bottom, rgb(138, 211, 245), rgb(238, 155, 227));
+  color: #ffffff;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 25%;
+}
+.link-medium:hover {
+  background-image: linear-gradient(to bottom, rgba(238, 155, 227, 1), rgba(138, 211, 245, 1));
+}
+
+/* Media queries */
+@media(max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 750px) {
+  .container {
+    width: 450px;
+  }
+}
+@media(max-width: 500px) {
+  .container {
+    width: 350px;
+  }
+  .banner {
+    padding: 50px 0;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 20px;
+  }
 }
